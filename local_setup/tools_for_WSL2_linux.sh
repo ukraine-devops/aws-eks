@@ -41,9 +41,8 @@ unzip awscliv2.zip
 sudo ./aws/install
 aws --version
 
-# Cleaning up APT manager
-sudo apt -y autoremove
-sudo apt -y clean
+# git aliases for lightning work
+https://gist.github.com/levpa/3658c24beb62acd2dcd9f92fc79c7d99
 
 # add branch identation for bash terminal (put snippet into ~/.bashrc):
 

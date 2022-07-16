@@ -48,7 +48,7 @@ https://gist.github.com/levpa/3658c24beb62acd2dcd9f92fc79c7d99
 
 # change that snippet without branch:
 if [ "$color_prompt" = yes ]; then
-    PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[\033[31m\]\$(show_git_branch)\[\033[00m\]$ "
+    PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[\033[33m\]\$(show_git_branch)\[\033[00m\]$ "
 else
     PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w \$(show_git_branch)\$ "
 fi
@@ -59,7 +59,7 @@ show_git_branch() {
 }
 
 if [ "$color_prompt" = yes ]; then
-    PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[\033[31m\]\$(show_git_branch)\[\033[00m\]$ "
+    PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[\033[33m\]\$(show_git_branch)\[\033[00m\]$ "
 else
     PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w \$(show_git_branch)\$ "
 fi

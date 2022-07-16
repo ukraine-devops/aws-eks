@@ -2,13 +2,10 @@
 wsl --install
 # or for particular distribution
 wsl --list --online
-# Ubuntu          Ubuntu
 # Debian          Debian GNU/Linux
 # kali-linux      Kali Linux Rolling
 # openSUSE-42     openSUSE Leap 42
 # SLES-12         SUSE Linux Enterprise Server v12
-# Ubuntu-16.04    Ubuntu 16.04 LTS
-# Ubuntu-18.04    Ubuntu 18.04 LTS
 # Ubuntu-20.04    Ubuntu 20.04 LTS
 wsl --install -d kali-linux 
 # or you can install any other version from Microsoft Store (nice installation with GUI)
@@ -31,4 +28,8 @@ https://keepass.info/
 # if you need to test API or services, I would recommend the Postman app
 https://www.postman.com/downloads/
 
-# we don't need to install anything else, all other tools will be installed in WSL2
+# my personal recommendation for intelligent translations
+https://www.deepl.com/en/app/
+
+# windows terminal: we can use it as tmux analog: wsl2, powershell, cmd, git bash, cloud shell...
+https://docs.microsoft.com/en-us/windows/terminal/install

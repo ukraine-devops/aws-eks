@@ -1,4 +1,6 @@
-# install nvm from the script, pay attention to the version! 
+# This template was tested on Ubuntu 22.04 in July 2022.
+
+# install Node version manager from the script, pay attention to the version number! 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 # reopen terminal and install the correct version of Node
@@ -6,13 +8,14 @@ nvm install 16
 # ouput must be like that:
 Downloading and installing node v16.16.0...
 
-# check Docker with command down below (should work, if Docker Desktop already installed)
+# check Docker with command down below (should work, if Docker Desktop already installed and launched)
 docker run hello-world
 
 # Ansible
 sudo apt-add-repository -y ppa:ansible/ansible
 sudo apt -y update
 sudo apt -y install ansible
+ansible --version
 
 # Install kubectl
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
@@ -41,3 +44,23 @@ aws --version
 # Cleaning up APT manager
 sudo apt -y autoremove
 sudo apt -y clean
+
+# add branch identation for bash terminal (put snippet into ~/.bashrc):
+
+# change that snippet without branch:
+if [ "$color_prompt" = yes ]; then
+    PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[\033[31m\]\$(show_git_branch)\[\033[00m\]$ "
+else
+    PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w \$(show_git_branch)\$ "
+fi
+
+# to that with branch color:
+show_git_branch() {
+   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+if [ "$color_prompt" = yes ]; then
+    PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[\033[31m\]\$(show_git_branch)\[\033[00m\]$ "
+else
+    PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w \$(show_git_branch)\$ "
+fi

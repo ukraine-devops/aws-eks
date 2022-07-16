@@ -6,7 +6,7 @@ nvm install 16
 # ouput must be like that:
 Downloading and installing node v16.16.0...
 
-# check Docker with command down below ( should work, if Docker Desktop already installed ):
+# check Docker with command down below (should work, if Docker Desktop already installed)
 docker run hello-world
 
 # Ansible

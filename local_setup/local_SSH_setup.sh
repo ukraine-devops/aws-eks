@@ -1,5 +1,4 @@
 # WSL2 Ubuntu 22.04 workflow with VS Code and SSH keys
-
 # create ssh folder
 mkdir .ssh && cd "$_"
 
@@ -14,16 +13,15 @@ Host gitlab.com
         PreferredAuthentications publickey
         IdentityFile ~/.ssh/gitlab
 
-# set access rights for SSH folder and keys into it
+# set access rights for SSH folder and files into it
 chmod 700 ~/.ssh && chmod 600 ~/.ssh/*
 
-# copy paste your public key into gitlab preferences/SSH Keys:
+# copy paste your public key into your gitlab account: Preferences/SSH Keys
 cat ~/.ssh/gitlab.pub
 
 # then end up with checking you configuration by git clone
-cd && git clone git@gitlab.com:company/group/repo.git
+cd && git clone git@gitlab.com:company_name/group/repo.git
 
-# launch project with VS Code server from WSL2 ubuntu: 
+# launch project with VS Code server from WSL2: 
 code repo
 
-# happy coding!

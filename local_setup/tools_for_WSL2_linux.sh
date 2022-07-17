@@ -13,7 +13,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 nvm install 16
 
 # output must be like that:
-Downloading and installing node v16.16.0...
+# Downloading and installing node v16.16.0...
 
 # check Docker with command down below (should work, if Docker Desktop already installed and launched)
 docker run hello-world
@@ -78,25 +78,19 @@ https://garrytrinder.github.io/2020/12/my-wsl2-windows-terminal-setup
 https://www.jetbrains.com/lp/mono
 
 # windows terminal fonts settings
-```
 "fontFace": "JetBrains Mono",
 "fontSize": 12
-```
+
 # install zsh and switch to
-```
 sudo apt install zsh
 chsh -s $(which zsh)
-```
 
 # install spaceship theme
-```
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-```
 ## I set ZSH_THEME="spaceship" and uncommented the line in .zshrc.
 
 ## I added SPACESHIP_PROMPT_ORDER array to .zshrc above source $ZSH/oh-my-zsh.sh line.
-```
 SPACESHIP_PROMPT_ORDER=(
   dir           # Current directory section
   git           # Git section (git_branch + git_status)
@@ -111,11 +105,10 @@ SPACESHIP_PROMPT_ORDER=(
   exit_code     # Exit code section
   char          # Prompt character
 )
-```
 
 ## plugins download and install
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 ## I added zsh-autosuggestions to the plugins array in .zshrc.
-`plugins=(git zsh-autosuggestions zsh-syntax-highlighting)`
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)

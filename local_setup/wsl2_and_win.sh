@@ -14,5 +14,9 @@ wsl
 
 # you can always switch to bash
 exec bash
+
 # or to zsh
 exec zsh
+
+# switch to any shell
+chsh -s $(which "SHELL NAME")

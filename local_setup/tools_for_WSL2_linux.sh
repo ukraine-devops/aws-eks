@@ -112,3 +112,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 ## I added zsh-autosuggestions to the plugins array in .zshrc.
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+# I set COMPLETION_WAITING_DOTS="true" and uncommented the line in .zshrc
+COMPLETION_WAITING_DOTS="true"

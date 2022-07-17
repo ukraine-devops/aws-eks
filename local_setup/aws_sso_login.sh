@@ -32,5 +32,5 @@ export AWS_PROFILE=dev
 # login to 'dev' profile
 aws sso login 
 
-# to check what account is used for commands
+# to check what account is used for
 aws sts get-caller-identity

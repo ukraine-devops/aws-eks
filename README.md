@@ -2,6 +2,11 @@
 
 my demo repository for blueprints and solutions encountered on the project
 
+## Tools and services
+
+- AWS cloud: EKS, Route53, PostgreSQL, ALB  
+- GitLab, Runners, Pipelines
+
 ## Rules and architectural approaches for the project
 
 1. Cross-reviews help to create code with a good quality level

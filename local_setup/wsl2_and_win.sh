@@ -11,3 +11,8 @@ wsl --shutdown
 
 # boot up distro with new terminal session
 wsl
+
+# you can always switch to bash
+exec bash
+# or to zsh
+exec zsh

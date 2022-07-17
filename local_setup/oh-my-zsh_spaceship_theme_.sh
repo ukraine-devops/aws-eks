@@ -48,5 +48,6 @@ COMPLETION_WAITING_DOTS="true"
 nano ~/.oh-my-zsh/custom/config.zsh
 
 # write to the config.zsh next code snippet
+# https://superuser.com/questions/1698521/zsh-keep-all-command-outputs-on-terminal-screen
 export PAGER=""
 export LESS="-F -X -R"

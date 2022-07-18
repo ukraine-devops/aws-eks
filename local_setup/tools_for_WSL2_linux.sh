@@ -12,6 +12,9 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 # reopen terminal and install the correct version of Node
 nvm install 16
 
+# install yarn 
+npm install --global yarn
+
 # output must be like that:
 # Downloading and installing node v16.16.0...
 

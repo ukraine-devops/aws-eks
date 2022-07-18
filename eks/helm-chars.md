@@ -1,0 +1,15 @@
+# Working with EKS
+
+## Login to AWS
+
+`aws sso login`
+insert the code from 2FA generator
+
+## copy kubeconfig from AWS
+
+`aws eks update-kubeconfig --name your-cluster-name`
+
+## install Helm chart with namespace creation
+
+<!-- https://stackoverflow.com/questions/51783651/how-to-create-a-namespace-if-it-doesnt-exists-from-helm-templates -->
+`helm upgrade --install <release_name> <folder_to_chart> --namespace <namespace_name> --create-namespace --wait`

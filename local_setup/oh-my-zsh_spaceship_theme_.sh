@@ -51,3 +51,10 @@ nano ~/.oh-my-zsh/custom/config.zsh
 # https://superuser.com/questions/1698521/zsh-keep-all-command-outputs-on-terminal-screen
 export PAGER=""
 export LESS="-F -X -R"
+
+# zsh command not found
+# https://stackoverflow.com/questions/18428374/commands-not-found-on-zsh
+
+nano ~/.zshrc
+export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
+

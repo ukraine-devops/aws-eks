@@ -1,0 +1,1 @@
+{"rule":"GONNA","sentence":"^\\Q\"Clear Code\" practices with DRY(don't repeat), KISS(keep it simple), YAGNI(you're gonna need it) and SOLID principles\\E$"}

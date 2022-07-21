@@ -22,6 +22,10 @@ https://www.docker.com/products/docker-desktop/
 # install Lens for K8S
 https://k8slens.dev/
 
+# you can use .kube\config from WSL2 Ubuntu:
+# go to K8S Preferences -> Kubernetes -> Kubeconfig Syncs
+\\wsl.localhost\Ubuntu-22.04\home\<username>\.kube\config
+
 # as a secret manager I can recommend KeePass, it has a lot of plugins and functionality!
 https://keepass.info/
 

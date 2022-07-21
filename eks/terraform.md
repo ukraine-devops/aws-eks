@@ -4,7 +4,7 @@ Add "dotenv" plugin to ~/.zshrc config, so you can automatic pick up
 your .env file, when starting new terminal session.
 
 ```sh
-# my main settings as example
+# my main .zshrc settings as example
 plugins=(
     git 
     zsh-autosuggestions 

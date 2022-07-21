@@ -6,8 +6,11 @@
 insert the code from 2FA generator
 
 ## copy kubeconfig from AWS
+`aws eks update-kubeconfig --name <your-cluster-name> --region <your-aws-region>`
 
-`aws eks update-kubeconfig --name your-cluster-name`
+# to monitor your Kubernetes cluster:
+# go to Lens K8S Preferences -> Kubernetes -> Kubeconfig Syncs
+\\wsl.localhost\Ubuntu-22.04\home\<username>\.kube\config
 
 ## install Helm chart with namespace creation
 

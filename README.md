@@ -1,11 +1,13 @@
 # AWS, EKS and other cloud tools
 
-my demo repository for blueprints and solutions encountered on the project
+My demo repository for blueprints and solutions encountered on the project
 
 ## Tools and services
 
-- AWS cloud: EKS, Route53, PostgreSQL, ALB  
+- AWS cloud: EKS, Route53, PostgreSQL Cluster, ALB, STS, DynamoDB, S3   
 - GitLab, Runners, Pipelines
+- Lens, VS Code, Terraform, Helm, Werf, Docker
+- DevOps practices on Windows 11 with WSL2 Ubuntu 22.04 
 
 ## Rules and architectural approaches
 
@@ -15,7 +17,7 @@ my demo repository for blueprints and solutions encountered on the project
 
 3. Apply microservice architecture for system agility and ability to expand and migrate quickly (modularity, SOLID)
 
-4. Work on one task at a time, don't switch between several contexts (refocus takes time and creates complex problems)
+4. Work on one task at a time, don't switch between several contexts (refocus takes time and creates complex problems).
 
 5. Create clear docs and diagrams after R&D and feature testing (your feature costs nothing without proper documentation and high-level diagram)
 

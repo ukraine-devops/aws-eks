@@ -19,7 +19,7 @@ My demo repository for blueprints and solutions encountered on the project
 
 4. Work on one task at a time, don't switch between several contexts (refocus takes time and creates complex problems).
 
-5. Create clear docs and diagrams after R&D and feature testing (your feature costs nothing without proper documentation and high-level diagram)
+5. Create clear docs and diagrams after R&D, testing or implementation (your feature costs nothing without proper documentation and high-level diagram)
 
 6. Each task/ticket must be atomic and have a single responsibility principle (SOLID)
 

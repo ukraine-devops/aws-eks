@@ -58,3 +58,6 @@ export LESS="-F -X -R"
 nano ~/.zshrc
 export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
 
+# start modern browsers from wsl2 zsh terminal
+alias chrome="/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe"
+alias edge="/mnt/c/Program\ Files\ \(x86\)/Microsoft/Edge/Application/msedge.exe"

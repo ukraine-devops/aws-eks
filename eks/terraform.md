@@ -45,15 +45,3 @@ __sandbox.tfvars.json__ example
 
 Add "dotenv" plugin to ~/.zshrc config, so you can automatic pick up 
 your .env file, when starting new terminal session.
-
-```sh
-# my main .zshrc settings as example
-plugins=(
-    git 
-    zsh-autosuggestions 
-    zsh-syntax-highlighting 
-    dotenv
-    )
-export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
-ZSH_THEME="spaceship"
-```

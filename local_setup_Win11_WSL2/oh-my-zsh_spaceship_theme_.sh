@@ -38,7 +38,17 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 ## I added zsh-autosuggestions to the plugins array in .zshrc.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+```sh
+# my main .zshrc settings as example
+plugins=(
+    git 
+    zsh-autosuggestions 
+    zsh-syntax-highlighting 
+    dotenv
+    kubectl
+    helm
+    )
+```
 
 # I set COMPLETION_WAITING_DOTS="true" and uncommented the line in .zshrc
 COMPLETION_WAITING_DOTS="true"

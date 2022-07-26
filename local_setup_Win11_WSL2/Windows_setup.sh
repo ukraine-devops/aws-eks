@@ -10,11 +10,23 @@ wsl --list --online
 wsl --install -d kali-linux 
 # or you can install any other version from Microsoft Store (nice installation with GUI)
 
-# install the Chrome browser, we use "Developer Tools" and extensions
+# install the Chrome browser, we use "Developer Tools" and extensions from Chrome and Edge browsers
 https://www.google.com/intl/en_us/chrome/
 
 # main tool in our collection is VS Code, feel free to use best plugins from this cool IDE
 https://code.visualstudio.com/download
+
+```yaml
+vs-code-modules:
+    .ENV Selector
+    Docker
+    GitLab Workflow
+    GitLens
+    Helm Intellisense
+    Kubernetes
+    Path Intellisense
+    YAML
+```
 
 # install Docker Desktop
 https://www.docker.com/products/docker-desktop/
@@ -25,9 +37,6 @@ https://k8slens.dev/
 # you can use .kube\config from WSL2 Ubuntu:
 # go to K8S Preferences -> Kubernetes -> Kubeconfig Syncs
 \\wsl.localhost\Ubuntu-22.04\home\<username>\.kube\config
-
-# as a secret manager I can recommend KeePass, it has a lot of plugins and functionality!
-https://keepass.info/
 
 # if you need to test API or services, I would recommend the Postman app
 https://www.postman.com/downloads/
